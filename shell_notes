@@ -1,0 +1,267 @@
+chrrodri@cbr9s2 ~ % ls /tmp
+AdditionalDeployedPackages.xml	     config-err-wx22IH								systemd-private-f041d3003726433d898c2906d142240f-iio-sensor-proxy.service-kIEhNo
+cef_server_params.txt		     config-err-YNyUpi								systemd-private-f041d3003726433d898c2906d142240f-ModemManager.service-DSHQJZ
+cef_server_pipe_937318_09_29_33_259  dotnet-diagnostic-937400-54254371-socket					systemd-private-f041d3003726433d898c2906d142240f-power-profiles-daemon.service-3njaFw
+client_pipe_937318_09_29_33_259      hsperfdata_chrrodri							systemd-private-f041d3003726433d898c2906d142240f-redis-server.service-Yk4CKg
+clr-debug-pipe-937400-54254371-in    JetBrainsPerUserTemp-101416-1						systemd-private-f041d3003726433d898c2906d142240f-switcheroo-control.service-cDv4Ng
+clr-debug-pipe-937400-54254371-out   krb5cc_0									systemd-private-f041d3003726433d898c2906d142240f-systemd-logind.service-cqzk8O
+config-err-2F5txq		     krb5cc_101416_VqoI2R							systemd-private-f041d3003726433d898c2906d142240f-systemd-resolved.service-wBcFH5
+config-err-2NCRoB		     krb5ccmachine_42BARCELONA.COM						systemd-private-f041d3003726433d898c2906d142240f-systemd-timesyncd.service-pjqvUU
+config-err-A1bYig		     libcatboost4j-prediction13205053216096018533.so				systemd-private-f041d3003726433d898c2906d142240f-ubuntu-advantage-desktop-daemon.service-HuyP3x
+config-err-B1BpYK		     MozillaUpdateLock-4F96D1932A9F858E						systemd-private-f041d3003726433d898c2906d142240f-upower.service-Kvra77
+config-err-ciUraF		     NuGetScratchchrrodri							tmp.1kKkD28KEA
+config-err-DTAsqh		     preamble-caaa46.pch							tmpbomex95x
+config-err-f67wOe		     preamble-f06320.pch							vboxdrv-Module.symvers
+config-err-jyhIC5		     snap-private-tmp								wezterm-blob-lease-5DEiXdkR
+config-err-PUzJSe		     systemd-private-f041d3003726433d898c2906d142240f-bluetooth.service-EQJ6cb	wezterm-blob-lease-B1W31vqn
+config-err-qHSGxs		     systemd-private-f041d3003726433d898c2906d142240f-bolt.service-L8jYig	wezterm-blob-lease-MyTJXRQH
+config-err-uov7xD		     systemd-private-f041d3003726433d898c2906d142240f-colord.service-Yqb07C	wezterm-blob-lease-ttWPchDZ
+config-err-w35uX1		     systemd-private-f041d3003726433d898c2906d142240f-fwupd.service-IabNlp
+chrrodri@cbr9s2 ~ % mkdir /tmp/test
+chrrodri@cbr9s2 ~ % export PATH=$PATH:/tmp/test
+chrrodri@cbr9s2 ~ % env
+SYSTEMD_EXEC_PID=935129
+SSH_AUTH_SOCK=/run/user/101416/keyring/ssh
+SESSION_MANAGER=local/cbr9s2.42barcelona.com:@/tmp/.ICE-unix/935107,unix/cbr9s2.42barcelona.com:/tmp/.ICE-unix/935107
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ef0463f6_08bf_40d1_94da_64e1a9d2d1aa
+LANG=en_US.UTF-8
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+FT_HOOK_NAME=login-user
+IM_CONFIG_PHASE=1
+FT_HOOK_PATHNAME=login-user.d
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/chrrodri
+LIBVIRT_DEFAULT_URI=qemu:///system
+GPG_AGENT_INFO=/run/user/101416/gnupg/S.gpg-agent:0:1
+DESKTOP_SESSION=ubuntu
+QT_IM_MODULE=ibus
+XDG_MENU_PREFIX=gnome-
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session13
+USER=chrrodri
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/101416/bus
+DOCKER_HOST=unix:///run/user/101416/docker.sock
+SSH_AGENT_LAUNCHER=gnome-keyring
+GTK_MODULES=gail:atk-bridge
+_=/usr/bin/env
+GTK_IM_MODULE=ibus
+XDG_SESSION_DESKTOP=ubuntu
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+QT_ACCESSIBILITY=1
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+KRB5CCNAME=FILE:/tmp/krb5cc_101416_VqoI2R
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+LOGNAME=chrrodri
+GNOME_TERMINAL_SERVICE=:1.105
+HOME=/home/chrrodri
+PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp/test
+XDG_RUNTIME_DIR=/run/user/101416
+XMODIFIERS=@im=ibus
+SHELL=/bin/zsh
+XDG_SESSION_TYPE=x11
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VTE_VERSION=6800
+MACADDRESS=18:7e:b9:06:8c:f7
+COLORTERM=truecolor
+XAUTHORITY=/home/chrrodri/.Xauthority
+PWD=/home/chrrodri
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+GDMSESSION=ubuntu
+DISPLAY=:0
+SHLVL=1
+OLDPWD=/home/chrrodri
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+MAIL=chrrodri@student.42barcelona.com
+chrrodri@cbr9s2 ~ % env | grep "path" -i
+FT_HOOK_PATHNAME=login-user.d
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session13
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/101416/bus
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp/test
+chrrodri@cbr9s2 ~ % env | grep "path"
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/101416/bus
+chrrodri@cbr9s2 ~ % env | grep "path" -i
+FT_HOOK_PATHNAME=login-user.d
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session13
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/101416/bus
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp/test
+chrrodri@cbr9s2 ~ % cd /tmp/test
+chrrodri@cbr9s2 /tmp/test % ls -l
+total 0
+chrrodri@cbr9s2 /tmp/test % vim chris
+chrrodri@cbr9s2 /tmp/test % sh chris
+Christian es un crack
+chrrodri@cbr9s2 /tmp/test % ls -l
+total 4
+-rw-r--r-- 1 chrrodri None_barcelona 42 May 18 22:52 chris
+chrrodri@cbr9s2 /tmp/test % cat chris
+#!/bin/bash
+
+echo "Christian es un crack"
+chrrodri@cbr9s2 /tmp/test % chmod +x chris
+chrrodri@cbr9s2 /tmp/test % ls -l
+total 4
+-rwxr-xr-x 1 chrrodri None_barcelona 42 May 18 22:52 chris
+chrrodri@cbr9s2 /tmp/test % ls -l
+total 4
+-rwxr-xr-x 1 chrrodri None_barcelona 42 May 18 22:52 chris
+chrrodri@cbr9s2 /tmp/test % ls
+chris
+chrrodri@cbr9s2 /tmp/test % ./chris
+Christian es un crack
+chrrodri@cbr9s2 /tmp/test % cat chris
+#!/bin/bash
+
+echo "Christian es un crack"
+chrrodri@cbr9s2 /tmp/test % vim lectura.txt
+chrrodri@cbr9s2 /tmp/test % chmod 777 lectura.txt
+chrrodri@cbr9s2 /tmp/test % vim lectura.txt
+chrrodri@cbr9s2 /tmp/test % ./lectura.txt
+./lectura.txt: line 3: aqui: command not found
+./lectura.txt: line 4: aunque: command not found
+chrrodri@cbr9s2 /tmp/test % ls -l
+total 8
+-rwxr-xr-x 1 chrrodri None_barcelona 42 May 18 22:52 chris
+-rwxrwxrwx 1 chrrodri None_barcelona 72 May 18 22:54 lectura.txt
+chrrodri@cbr9s2 /tmp/test % cat chris
+#!/bin/bash
+
+echo "Christian es un crack"
+chrrodri@cbr9s2 /tmp/test % cat lectura.txt
+#!/bin/bash
+
+aqui si vamos a erscribir un texto incluso
+aunque este mal
+chrrodri@cbr9s2 /tmp/test % cd
+chrrodri@cbr9s2 ~ % env | grep "path" -i
+FT_HOOK_PATHNAME=login-user.d
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session13
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/101416/bus
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp/test
+chrrodri@cbr9s2 ~ % powd
+zsh: command not found: powd
+chrrodri@cbr9s2 ~ % pwd
+/home/chrrodri
+chrrodri@cbr9s2 ~ % cat lectura.txt
+cat: lectura.txt: No such file or directory
+chrrodri@cbr9s2 ~ % ./chris
+zsh: no such file or directory: ./chris
+chrrodri@cbr9s2 ~ % chris
+Christian es un crack
+chrrodri@cbr9s2 ~ % ls -l
+total 16
+-rw-r--r-- 1 chrrodri None_barcelona 1612 Apr 11 18:20 backup_zshrc
+drwxr-xr-x 4 chrrodri None_barcelona   38 May 17 17:38 common_core
+drwxr-xr-x 3 chrrodri None_barcelona   19 Feb 18 10:31 Desktop
+drwxr-xr-x 3 chrrodri None_barcelona   28 Sep 25  2024 Documents
+drwxr-xr-x 2 chrrodri None_barcelona    6 Apr 21 23:00 Downloads
+lrwxrwxrwx 1 chrrodri None_barcelona   17 Jun  5  2024 goinfre -> /goinfre/chrrodri
+drwxr-xr-x 9 chrrodri None_barcelona  146 May 17 23:47 homework
+-rw-r--r-- 1 chrrodri None_barcelona    0 Apr 24 17:44 jcef_3757172.log
+-rw-r--r-- 1 chrrodri None_barcelona    0 May 18 21:29 jcef_937318.log
+drwxr-xr-x 2 chrrodri None_barcelona    6 Jun  5  2024 Music
+drwxr-xr-x 3 chrrodri None_barcelona   25 Jul 17  2024 Pictures
+drwxr-xr-x 2 chrrodri None_barcelona    6 Jun  5  2024 Public
+lrwxrwxrwx 1 chrrodri None_barcelona   27 Jun  5  2024 sgoinfre -> /sgoinfre/students/chrrodri
+drwx------ 6 chrrodri None_barcelona   63 Aug 16  2024 snap
+drwxr-xr-x 2 chrrodri None_barcelona    6 Jun  5  2024 Templates
+drwxr-xr-x 2 chrrodri None_barcelona    6 Jun  5  2024 Videos
+-rwxr-xr-x 1 chrrodri None_barcelona  599 May 10 21:44 vimrc_april
+-rw-r--r-- 1 chrrodri None_barcelona 1612 Apr 26 21:22 zshrc_42
+-rwxr-xr-x 1 chrrodri None_barcelona 1593 Apr 26 21:21 zshrc_predator
+chrrodri@cbr9s2 ~ % lectura.txt
+/tmp/test/lectura.txt: line 3: aqui: command not found
+/tmp/test/lectura.txt: line 4: aunque: command not found
+chrrodri@cbr9s2 ~ % ./lectura.txtr
+zsh: no such file or directory: ./lectura.txtr
+chrrodri@cbr9s2 ~ % ./lectura.txt
+zsh: no such file or directory: ./lectura.txt
+chrrodri@cbr9s2 ~ % lectura.txt
+/tmp/test/lectura.txt: line 3: aqui: command not found
+/tmp/test/lectura.txt: line 4: aunque: command not found
+chrrodri@cbr9s2 ~ % ls
+backup_zshrc  common_core  Desktop  Documents  Downloads  goinfre  homework  jcef_3757172.log  jcef_937318.log	Music  Pictures  Public  sgoinfre  snap  Templates  Videos  vimrc_april  zshrc_42  zshrc_predator
+chrrodri@cbr9s2 ~ % cd /tmp/test
+chrrodri@cbr9s2 /tmp/test % ./chris
+Christian es un crack
+chrrodri@cbr9s2 /tmp/test % chris
+Christian es un crack
+chrrodri@cbr9s2 /tmp/test % export PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+chrrodri@cbr9s2 /tmp/test % chris
+zsh: command not found: chris
+chrrodri@cbr9s2 /tmp/test % ./chris
+Christian es un crack
+chrrodri@cbr9s2 /tmp/test % history
+ 1173  cd
+ 1174  env | grep "path" -i
+ 1175  powd
+ 1176  pwd
+ 1177  cat lectura.txt
+ 1180  ls -l
+ 1182  ./lectura.txtr
+ 1183  ./lectura.txt
+ 1184  lectura.txt
+ 1185  ls
+ 1186  cd /tmp/test
+ 1189  export PATH=/home/chrrodri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+ 1190  chris
+ 1191  ./chris
+ 1192* make
+ 1193* ./minishell
+chrrodri@cbr9s2 /tmp/test %
+chrrodri@cbr9s2 /tmp/test % bash
+chrrodri@cbr9s2:/tmp/test$ history
+    1  history
+chrrodri@cbr9s2:/tmp/test$ sdfsdf
+sdfsdf: command not found
+chrrodri@cbr9s2:/tmp/test$ history
+    1  history
+    2  sdfsdf
+    3  history
+chrrodri@cbr9s2:/tmp/test$ man 3 readline
+chrrodri@cbr9s2:/tmp/test$ man 3 readline
+chrrodri@cbr9s2:/tmp/test$ which readline
+chrrodri@cbr9s2:/tmp/test$
+exit
+chrrodri@cbr9s2 /tmp/test % whereis
+whereis: not enough arguments
+Try 'whereis --help' for more information.
+chrrodri@cbr9s2 /tmp/test % whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz /usr/share/man/man1/ls.1posix.gz
+chrrodri@cbr9s2 /tmp/test % whereis X11
+X11: /usr/bin/X11 /usr/lib/X11 /etc/X11 /usr/include/X11 /usr/share/X11
+chrrodri@cbr9s2 /tmp/test % whereis readline
+readline: /usr/include/readline /usr/share/readline /usr/share/man/man3/readline.3readline.gz
+chrrodri@cbr9s2 /tmp/test % cd /usr/include/readline
+chrrodri@cbr9s2 /usr/include/readline
+ % ls -l
+total 80
+-rw-r--r-- 1 root root  4367 Jan  6  2022 chardefs.h
+-rw-r--r-- 1 root root 10800 Jan  6  2022 history.h
+-rw-r--r-- 1 root root  3260 Jan  6  2022 keymaps.h
+-rw-r--r-- 1 root root 39763 Jan  6  2022 readline.h
+-rw-r--r-- 1 root root  2829 Jan  6  2022 rlconf.h
+-rw-r--r-- 1 root root  1837 Jan  6  2022 rlstdc.h
+-rw-r--r-- 1 root root  3193 Jan  6  2022 rltypedefs.h
+-rw-r--r-- 1 root root  3046 Jan  6  2022 tilde.h
+chrrodri@cbr9s2 /usr/include/readline
+ % less history.h q
+chrrodri@cbr9s2 /usr/include/readline
+ % less history.h
+chrrodri@cbr9s2 /usr/include/readline
+ % ls -l
+total 80
+-rw-r--r-- 1 root root  4367 Jan  6  2022 chardefs.h
+-rw-r--r-- 1 root root 10800 Jan  6  2022 history.h
+-rw-r--r-- 1 root root  3260 Jan  6  2022 keymaps.h
+-rw-r--r-- 1 root root 39763 Jan  6  2022 readline.h
+-rw-r--r-- 1 root root  2829 Jan  6  2022 rlconf.h
+-rw-r--r-- 1 root root  1837 Jan  6  2022 rlstdc.h
+-rw-r--r-- 1 root root  3193 Jan  6  2022 rltypedefs.h
+-rw-r--r-- 1 root root  3046 Jan  6  2022 tilde.h
+chrrodri@cbr9s2 /usr/include/readline
+ % less readline.h
+chrrodri@cbr9s2 /usr/include/readline
+ %
+

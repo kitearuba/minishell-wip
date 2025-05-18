@@ -20,7 +20,7 @@ INC_DIR     = include
 #                          Source Files and Objects                            #
 # **************************************************************************** #
 SRC = \
-	$(SRC_DIR)/main.c \
+	$(SRC_DIR)/core/minishell.c \
 
 OBJ         = $(SRC:.c=.o)
 DEP         = $(OBJ:.o=.d)
