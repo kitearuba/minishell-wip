@@ -14,7 +14,7 @@
 
 char	*ft_getenv(char **envp, char *key)
 {
-	size_t int	len;
+	size_t	len;
 
 	if (!key)
 		return (NULL);

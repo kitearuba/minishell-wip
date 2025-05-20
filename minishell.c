@@ -40,15 +40,25 @@ static char	**copy_envp(char **envp)
 	return (local_envp);
 }
 
-int	main(int ac, char *argv[], char **envp[])
+int	main(int ac, char *argv[], char *envp[])
 {
-	char	*line;
+	//char	*line;
 	char	**e;
 	t_bash	bash;
+	int		i;
 
 	bash.env = copy_envp(envp);
 	(void)ac;
 	e = argv;
+	i = 0;
+	while (bash.env[i])
+	{
+		printf("%s\n", bash.env[i]);
+		i++;
+	}
+	/*
+	(void)ac;
+
 	while (1)
 	{
 		line = readline("minishell $> ");
@@ -67,5 +77,6 @@ int	main(int ac, char *argv[], char **envp[])
 		free(line);
 	}
 	clear_history();
+	*/
 	return (0);
 }
