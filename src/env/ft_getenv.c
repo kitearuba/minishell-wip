@@ -6,7 +6,7 @@
 /*   By: chrrodri <chrrodri@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 15:15:58 by chrrodri          #+#    #+#             */
-/*   Updated: 2025/05/20 15:56:24 by chrrodri         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:45:41 by chrrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_getenv(char **envp, char *key)
 {
-	size_t int len;
+	size_t int	len;
 
-	if(!key)
+	if (!key)
 		return (NULL);
-	len = ft_strlen(key);	
+	len = ft_strlen(key);
 	while (*envp)
 	{
 		if (ft_strncmp(*envp, key, len) == 0 && *envp[len] == '=')

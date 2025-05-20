@@ -6,11 +6,11 @@
 /*   By: chrrodri <chrrodri@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 14:15:32 by chrrodri          #+#    #+#             */
-/*   Updated: 2025/05/20 15:56:51 by chrrodri         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:43:48 by chrrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../../include/minishell.h"
+#include "../../include/minishell.h"
 
 static int	run_builtin(char **argv)
 {
@@ -20,7 +20,7 @@ static int	run_builtin(char **argv)
 		return (ft_cd(argv));
 	else if (ft_strcmp(argv[0], "pwd") == 0)
 		return (ft_pwd(argv));
-	else if (ft_strcmp(argv[0], "export" == 0)
+	else if (ft_strcmp(argv[0], "export") == 0)
 		return (ft_export(argv));
 	else if (ft_strcmp(argv[0], "unset") == 0)
 		return (ft_unset(argv));

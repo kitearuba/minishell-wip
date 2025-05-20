@@ -44,9 +44,8 @@ int	main(int ac, char *argv[], char **envp[])
 {
 	char	*line;
 	char	**e;
-	t_bash	bash;
 
-	bash.env = copy_envp(envp);
+	t_bash.env = copy_envp(envp);
 	(void)ac;
 	e = argv;
 	while (1)
