@@ -12,40 +12,11 @@
 
 #include "./include/minishell.h"
 
-static char	**copy_envp(char **envp)
-{
-	char	**local_envp;
-	int		i;
-	int		count;
-
-	count = 0;
-	i = 0;
-	while (envp[count])
-		count++;
-	local_envp = malloc(sizeof(char *) * (count + 1));
-	if (!local_envp)
-		return (NULL);
-	while (i < count)
-	{
-		local_envp[i] = strdup(envp[i]);
-		if (!local_envp[i])
-		{
-			while (envp[i])
-				free(envp[i++]);
-			free(local_envp);
-			return (NULL);
-		}
-		i++;
-	}
-	return (local_envp);
-}
-
-int	main(int ac, char *argv[], char **envp[])
+int	main(int ac, char *argv[], char *envp[])
 {
 	char	*line;
 	char	**e;
 
-	t_bash.env = copy_envp(envp);
 	(void)ac;
 	e = argv;
 	while (1)
