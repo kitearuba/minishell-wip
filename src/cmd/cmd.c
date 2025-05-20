@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/minishell.h"
+#include "../../include/minishell.h"
 
 void	exit_with_perror(char *msg, int exit_type)
 {

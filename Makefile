@@ -22,7 +22,16 @@ LIBFT_A     = $(LIBFT_DIR)/libft.a
 # **************************************************************************** #
 #                          Source Files and Objects                            #
 # **************************************************************************** #
-SRC = minishell.c cmd.c
+SRC = 	minishell.c \
+		$(SRC_DIR)/cmd/cmd.c \
+		$(SRC_DIR)/builtin/builtin.c \
+		$(SRC_DIR)/builtin/echo.c \
+		$(SRC_DIR)/builtin/cd.c \
+		$(SRC_DIR)/builtin/pwd.c \
+		$(SRC_DIR)/builtin/export.c \
+		$(SRC_DIR)/builtin/unset.c \
+        $(SRC_DIR)/builtin/env.c \
+        $(SRC_DIR)/builtin/exit.c \
 
 OBJ         = $(SRC:.c=.o)
 DEP         = $(OBJ:.o=.d)
