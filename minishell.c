@@ -59,44 +59,26 @@ static int	exit_failure(t_bash *bash)
 
 int	main(int ac, char *argv[], char *envp[])
 {
-	//char	*line;
+	char	*line;
 	t_bash	bash;
     (void)ac;
     (void)argv;
 
     if (init_minishell(&bash, envp))
         return (exit_failure(&bash));
-
-
-	/*
-	i = 0;
-	while (bash.env[i])
-	{
-		printf("%s\n", bash.env[i]);
-		i++;
-	}
-
-	(void)ac;
-
-	while (1)
-	{
-		line = readline("minishell $> ");
-		if (!line)
-		{
-			printf("exit\n");
-			break ;
-		}
-		if (*line)
-			add_history(line);
-		e = ft_split(line, ' ');
-		if (e[0] && ft_strnstr(BUILTIN_CMDS, e[0], ft_strlen(BUILTIN_CMDS)))
-			ft_cmd(line, envp);
-		else
-			printf("Comando alternativo: %s\n", line);
-		free(line);
-	}
-	clear_history();
-	*/
+    while (1)
+    {
+        line = readline("minishell $> ");
+        if (!line)
+        {
+            printf("exit\n");
+            break ;
+        }
+        if (*line)
+            add_history(line);
+        free(line);
+    }
+    clear_history();
     free (bash.env);
-	return (0);
+    return (0);
 }

@@ -24,6 +24,7 @@ LIBFT_A     = $(LIBFT_DIR)/libft.a
 # **************************************************************************** #
 SRC = 	minishell.c \
 		$(SRC_DIR)/env/ft_getenv.c \
+		$(SRC_DIR)/utils/free_2d_array.c \
 		#$(SRC_DIR)/builtin/builtin.c \
         		$(SRC_DIR)/builtin/echo.c \
         		$(SRC_DIR)/builtin/cd.c \

@@ -1,3 +1,5 @@
+#include "../../include/minishell.h"
+
 void	free_2d_array(char **arr)
 {
     int	i;
