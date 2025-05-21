@@ -30,33 +30,52 @@ static char	**copy_envp(char **envp)
 		local_envp[i] = strdup(envp[i]);
 		if (!local_envp[i])
 		{
-			while (envp[i])
-				free(envp[i++]);
+			while (i--)
+				free(local_envp[i]);
 			free(local_envp);
 			return (NULL);
 		}
 		i++;
 	}
+    local_envp[i] = NULL;
 	return (local_envp);
+}
+
+static int	init_minishell(t_bash *bash, char **envp)
+{
+    bash->env = copy_envp(envp);
+    if (!bash->env)
+        return (1);
+    bash->exit_status = 0;
+    return (0);
+}
+
+static int	exit_failure(t_bash *bash)
+{
+	write(2, "minishell: exit\n", 15);
+    free_2d_array(bash->env);
+	return (1);
 }
 
 int	main(int ac, char *argv[], char *envp[])
 {
 	//char	*line;
-	char	**e;
 	t_bash	bash;
-	int		i;
+    (void)ac;
+    (void)argv;
 
-	bash.env = copy_envp(envp);
-	(void)ac;
-	e = argv;
+    if (init_minishell(&bash, envp))
+        return (exit_failure(&bash));
+
+
+	/*
 	i = 0;
 	while (bash.env[i])
 	{
 		printf("%s\n", bash.env[i]);
 		i++;
 	}
-	/*
+
 	(void)ac;
 
 	while (1)
@@ -78,5 +97,6 @@ int	main(int ac, char *argv[], char *envp[])
 	}
 	clear_history();
 	*/
+    free (bash.env);
 	return (0);
 }

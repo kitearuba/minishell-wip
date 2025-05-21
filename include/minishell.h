@@ -56,4 +56,7 @@ int		execute_command(char **argv, char **envp);
 // --- Enviroment Handlers ---
 char	*ft_getenv(char **envp, char *key);
 
+// --- Utils  ---
+void	free_2d_array(char **arr);
+
 #endif //MINISHELL_H
