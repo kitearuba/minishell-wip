@@ -26,7 +26,7 @@ This project deepens understanding of:
 
 ### Implemented:
 - [x] **Makefile**, header file, and `main.c` structure
-- [x] Custom structure `t_bash` (or `t_shell`) for environment & shell state
+- [x] Custom structure `t_bash` for environment & shell state
 - [x] Function to copy and manage `envp[]` locally
 - [x] Custom `ft_getenv()` to access copied environment variables
 - [x] `free_2d_array()` to free `char **` arrays (env, tokens, etc.)
