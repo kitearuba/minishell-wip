@@ -31,6 +31,8 @@
 
 // --- Libft Custom Library ---
 # include "../libft/include/libft.h"
+# include "builtin.h"
+
 
 /* ************************************************************************** */
 /*                               Macros                                       */
@@ -53,7 +55,7 @@ typedef struct	s_bash
 // --- Built-ins and command execution ---
 //int		ft_cmd(char *cmd, char **envp[]);
 int		execute_command(char **argv, t_bash *bash);
-int		exec_external(char **args); //, t_bash *bash);
+int		exec_external(char **args, t_bash *bash);
 
 // --- Command path resolution ---
 char	*get_cmd_path(char *cmd, char **envp);

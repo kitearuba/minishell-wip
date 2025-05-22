@@ -12,41 +12,25 @@
 
 #include "../../include/minishell.h"
 
-static int	run_builtin(char **argv, t_bash *bash)
+int run_builtin(char **argv, t_bash *bash)
 {
     if (ft_strcmp(argv[0], "echo") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_echo(argv, bash));
     else if (ft_strcmp(argv[0], "cd") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_cd(argv, bash));
     else if (ft_strcmp(argv[0], "pwd") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_pwd(argv, bash));
     else if (ft_strcmp(argv[0], "export") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_export(argv, bash));
     else if (ft_strcmp(argv[0], "unset") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_unset(argv, bash));
     else if (ft_strcmp(argv[0], "env") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_env(argv, bash));
     else if (ft_strcmp(argv[0], "exit") == 0)
-        return (printf("%s\n", argv[0]));
+        return (ft_exit(argv, bash));
     return (1);
-	/*
-	if (ft_strcmp(argv[0], "echo") == 0)
-		return (ft_echo(argv));
-	else if (ft_strcmp(argv[0], "cd") == 0)
-		return (ft_cd(argv));
-	else if (ft_strcmp(argv[0], "pwd") == 0)
-		return (ft_pwd(argv));
-	else if (ft_strcmp(argv[0], "export") == 0)
-		return (ft_export(argv));
-	else if (ft_strcmp(argv[0], "unset") == 0)
-		return (ft_unset(argv));
-	else if (ft_strcmp(argv[/*0], "env") == 0)
-		return (ft_env(argv));
-	else if (ft_strcmp(argv[0], "exit") == 0)
-		return (ft_exit(argv));
-	return (1);
-	*/
 }
+
 static int	is_builtin(const char *cmd)
 {
     if (!cmd)
@@ -65,6 +49,5 @@ int	execute_command(char **argv, t_bash *bash)
 	if (is_builtin(argv[0]))
 		return (run_builtin(argv, bash));
 	else
-        return (ft_cmd(argv, bash));
-		//return (exec_external(argv)); //, bash));
+        return (exec_external(argv, bash));
 }
