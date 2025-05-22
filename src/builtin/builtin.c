@@ -65,5 +65,6 @@ int	execute_command(char **argv, t_bash *bash)
 	if (is_builtin(argv[0]))
 		return (run_builtin(argv, bash));
 	else
-		return (exec_external(argv)); //, bash));
+        return (ft_cmd(argv, bash));
+		//return (exec_external(argv)); //, bash));
 }
