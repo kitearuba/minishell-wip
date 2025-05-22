@@ -60,6 +60,7 @@ static int	exit_failure(t_bash *bash)
 int	main(int ac, char *argv[], char *envp[])
 {
 	char	*line;
+    char	**args;
 	t_bash	bash;
     (void)ac;
     (void)argv;
@@ -75,7 +76,13 @@ int	main(int ac, char *argv[], char *envp[])
             break ;
         }
         if (*line)
+        {
             add_history(line);
+            args = ft_split(line, ' ');
+            if (args && args[0])
+                execute_command(args, &bash);
+            free_2d_array(args);
+        }
         free(line);
     }
     clear_history();

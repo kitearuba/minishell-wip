@@ -47,16 +47,21 @@ typedef struct	s_bash
 } t_bash;
 
 /* ************************************************************************** */
-/*                               Structures                                   */
+/*                              FUNCTION PROTOTYPES                           */
 /* ************************************************************************** */
-// --- Built-ins & Commands Dispatcher ---
-int		ft_cmd(char *cmd, char **envp[]);
-int		execute_command(char **argv, char **envp);
 
-// --- Enviroment Handlers ---
+// --- Built-ins and command execution ---
+//int		ft_cmd(char *cmd, char **envp[]);
+int		execute_command(char **argv, t_bash *bash);
+int		exec_external(char **args); //, t_bash *bash);
+
+// --- Command path resolution ---
+char	*get_cmd_path(char *cmd, char **envp);
+
+// --- Environment variable handling ---
 char	*ft_getenv(char **envp, char *key);
 
-// --- Utils  ---
+// --- Utilities ---
 void	free_2d_array(char **arr);
 
 #endif //MINISHELL_H

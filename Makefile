@@ -25,8 +25,10 @@ LIBFT_A     = $(LIBFT_DIR)/libft.a
 SRC = 	minishell.c \
 		$(SRC_DIR)/env/ft_getenv.c \
 		$(SRC_DIR)/utils/free_2d_array.c \
-		#$(SRC_DIR)/builtin/builtin.c \
-        		$(SRC_DIR)/builtin/echo.c \
+		$(SRC_DIR)/cmd/run_external_cmd.c \
+		$(SRC_DIR)/executor/get_cmd_path.c \
+		$(SRC_DIR)/builtin/builtin.c \
+        		#$(SRC_DIR)/builtin/echo.c \
         		$(SRC_DIR)/builtin/cd.c \
         		$(SRC_DIR)/builtin/pwd.c \
         		$(SRC_DIR)/builtin/export.c \
@@ -34,6 +36,7 @@ SRC = 	minishell.c \
                 $(SRC_DIR)/builtin/env.c \
                 $(SRC_DIR)/builtin/exit.c \
         		$(SRC_DIR)/cmd/cmd.c \
+
 
 OBJ         = $(SRC:.c=.o)
 DEP         = $(OBJ:.o=.d)
