@@ -23,7 +23,7 @@ INC_DIR         = include
 # **************************************************************************** #
 
 MAKEFILE        = Makefile
-HEADER          = $(INC_DIR)/pipex.h
+HEADER          = $(INC_DIR)/minishell.h $(INC_DIR)/builtin.h
 LIBFT_A         = $(LIBFT_DIR)/libft.a
 LIBFT_H         = $(LIBFT_DIR)/$(INC_DIR)/libft.h
 LIBFT_MAKEFILE  = $(LIBFT_DIR)/$(MAKEFILE)
