@@ -48,6 +48,6 @@ int	execute_command(char **argv, t_bash *bash)
 {
 	if (is_builtin(argv[0]))
 		return (run_builtin(argv, bash));
-	else
+	else if
         return (exec_external(argv, bash));
 }

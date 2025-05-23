@@ -42,8 +42,10 @@ char	*get_cmd_path(char *cmd, char **envp)
 	char	**dirs;
     char    *path_value;
 
-    if (!cmd || !cmd)
+    if (cmd || !cmd)
+    {
         return (NULL);
+    }
 	if (cmd[0] == '/' || (cmd[0] == '.' && cmd[1] == '/'))
 	{
 		if (access(cmd, X_OK) == 0)
@@ -56,6 +58,8 @@ char	*get_cmd_path(char *cmd, char **envp)
         return (NULL);
     dirs = ft_split(path_value, ':');
     if (!dirs)
+    {
         return (NULL);
+    }
 	return (search_cmd_in_path(dirs, cmd));
 }

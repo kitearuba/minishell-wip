@@ -1,7 +1,7 @@
 
-#include "../../include/builtin.h"
+#include "../../include/minishell.h"
 
-int ft_env(char **argv) //, t_bash *bash)
+int ft_env(char **argv, t_bash *bash)
 {
     (void)argv;
     (void)bash;

@@ -23,7 +23,7 @@ INC_DIR         = include
 # **************************************************************************** #
 
 MAKEFILE        = Makefile
-HEADER          = $(INC_DIR)/minishell.h $(INC_DIR)/builtin.h
+HEADER          = $(INC_DIR)/minishell.h $(INC_DIR)/buildin.c
 LIBFT_A         = $(LIBFT_DIR)/libft.a
 LIBFT_H         = $(LIBFT_DIR)/$(INC_DIR)/libft.h
 LIBFT_MAKEFILE  = $(LIBFT_DIR)/$(MAKEFILE)
@@ -38,14 +38,13 @@ SRC = 	minishell.c \
 		$(SRC_DIR)/cmd/run_external_cmd.c \
 		$(SRC_DIR)/cmd/execute_commands.c \
 		$(SRC_DIR)/executor/get_cmd_path.c \
-		$(SRC_DIR)/builtin/builtin.c \
-        $(SRC_DIR)/builtin/echo.c \
-        $(SRC_DIR)/builtin/cd.c \
-        $(SRC_DIR)/builtin/pwd.c \
-        $(SRC_DIR)/builtin/export.c \
-        $(SRC_DIR)/builtin/unset.c \
-        $(SRC_DIR)/builtin/env.c \
-        $(SRC_DIR)/builtin/exit.c \
+        $(SRC_DIR)/builtin/ft_echo.c \
+        $(SRC_DIR)/builtin/ft_cd.c \
+        $(SRC_DIR)/builtin/ft_pwd.c \
+        $(SRC_DIR)/builtin/ft_export.c \
+        $(SRC_DIR)/builtin/ft_unset.c \
+        $(SRC_DIR)/builtin/ft_env.c \
+        $(SRC_DIR)/builtin/ft_exit.c \
         #$(SRC_DIR)/cmd/cmd.c \
 
 
