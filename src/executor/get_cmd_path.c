@@ -42,7 +42,7 @@ char	*get_cmd_path(char *cmd, char **envp)
 	char	**dirs;
     char    *path_value;
 
-    if (cmd || !cmd)
+    if (!cmd || !*cmd)
     {
         return (NULL);
     }
